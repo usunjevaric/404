@@ -4,10 +4,8 @@
 }
 body {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 1024px;
 }
 
 .container {
@@ -22,19 +20,18 @@ header {
   line-height: 25px;
   letter-spacing: -0.08em;
   text-transform: uppercase;
+  margin-bottom: 200px;
 }
 main {
   display: flex;
   margin: 0 77px;
-  height: 447px;
   justify-content: space-around;
   align-items: center;
   font-family: "Space Mono", monospace;
-  margin-top: 200px;
   color: #333333;
 }
 .image img {
-  height: 447px;
+  width: 539px;
   margin-right: 118px;
 }
 
@@ -72,4 +69,40 @@ footer {
   font-weight: 600;
   font-family: Montserrat;
   font-style: normal;
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    margin: 24px 20px;
+    margin-bottom: 109px;
+  }
+  main {
+    width: 100%;
+    margin: 0;
+    flex-direction: column;
+  }
+
+  .image img {
+    width: 100%;
+    max-width: 286px;
+    margin-right: 0;
+  }
+  .description {
+    margin-left: 18px;
+    margin-right: 10px;
+    width: 100%;
+    margin-top: 60px;
+  }
+  .description h1 {
+    font-size: 48px;
+    line-height: 71px;
+  }
+  .description p {
+    width: 100%;
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .description button {
+    margin-top: 67px;
+  }
 }
